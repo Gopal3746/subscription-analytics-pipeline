@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subscription-commerce-etl"
+version = "0.1.0"
+description = "Multi-source e-commerce ETL with a transparent synthetic subscription analytics layer."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "duckdb>=1.1,<2",
+  "pandas>=2.2,<3",
+  "pyarrow>=17,<20",
+  "pyspark>=3.5,<4",
+  "dbt-core>=1.8,<2",
+  "dbt-duckdb>=1.8,<2",
+  "streamlit>=1.40,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.7,<1"]
+
+[project.scripts]
+subscription-commerce = "subscription_commerce.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
