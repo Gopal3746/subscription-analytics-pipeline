@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_items
+      - name: payments
+      - name: products
+      - name: reviews
+      - name: category_translation
+      - name: marketing_spend
+      - name: catalog_overrides
+      - name: synthetic_subscription_cycles
