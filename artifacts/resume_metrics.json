@@ -1,0 +1,18 @@
+{
+  "real_orders": 99441,
+  "real_payment_records": 103886,
+  "real_order_items": 112650,
+  "synthetic_subscribers": 16955,
+  "synthetic_billing_cycles": 62125,
+  "customer_segments": 4,
+  "retention_cycle": 3,
+  "retention_variance_pct_points": 7.5,
+  "best_segment": "value_4",
+  "best_segment_retention_pct": 50.8,
+  "worst_segment": "value_1",
+  "worst_segment_retention_pct": 43.3,
+  "synthetic_churn_rate_pct": 88.6,
+  "synthetic_avg_ltv_brl": 462.32,
+  "fallback_cadence_days": 76,
+  "validation_path": "direct_csv_crosscheck"
+}
